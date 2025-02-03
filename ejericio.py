@@ -23,3 +23,13 @@ for i in range(numero):
     precio_ac += precio
 
 print("Pagaras un total de $", precio_ac)
+
+pago = input("Con cuanto vas a pagar?")
+
+while pago < precio_ac:
+    pago = input("Por favor introduce una cantidad mayor o igual al monto total")
+else:
+    devuelta = pago - precio_ac
+
+print("Tu devuelta es $", devuelta )    
+print("Muchas Gracias por comprar con nosotros, hasta luego")
