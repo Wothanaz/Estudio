@@ -1,0 +1,39 @@
+
+print("Bienvenido, cual es tu nombre")
+nombre = input()
+
+print('Bienvenido ', nombre)
+print('-------------------')
+print('Cuantos productos vas a llevar?')
+
+numero = input()
+
+while not numero.isdigit():
+    print("Introducir un numero")
+    numero = input()
+else:
+    print("pagaras ", numero, " productos")
+
+
+print("-----------------------")
+
+
+for i in range(int(numero)):
+    print('Introduce valor del produto: ')
+    suma = 0.0
+    valor = input()
+
+    while not valor.isdigit():
+        print("Introducir un numero")
+        valor = input()
+    else:
+        print(print("El producto ", i+1, " tiene un valor de ", valor))
+        suma = suma + int(valor)
+
+
+print("-----------------")
+
+
+print("Tus productos suman ", suma)
+print("Con cuanto vas a pagar")
+
